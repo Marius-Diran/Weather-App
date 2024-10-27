@@ -13,3 +13,7 @@
     padding: 0;
   }
 }
+
+.container {
+  @apply w-[98%] h-[100vh] mx-auto;
+}
