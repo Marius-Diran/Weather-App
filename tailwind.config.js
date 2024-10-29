@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/images/weather bg-alt.png')"
+      },
       screens: {
         'phones': {'min': '320px', 'max': '500px'}
       }

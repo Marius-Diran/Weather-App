@@ -6,7 +6,7 @@
   <title>Weather Site by Marius Odediran</title>
   <link rel="stylesheet" href="./output.css">
 </head>
-<body class="min-h-[100vh] flex justify-center items-center bg-green-700">
+<body class="min-h-[100vh] flex justify-center items-center bg-hero-pattern font-Roboto">
   <div class="container">
     <div class="h-[90vh] w-[40%] bg-purple-600 mx-auto my-10 rounded-2xl main-body">
       <div class="relative bg-transparent border border-solid border-white h-[10vh] w-[90%] flex items-center mx-auto top-8 rounded-lg search-box">
@@ -15,7 +15,7 @@
         <button class="fa-solid fa-magnifying-glass text-2xl mr-7" style="color: #ffffff;"></button>
       </div>
 
-      <div class="weather-box flex items-center">
+      <div class="weather-box">
         <div class="weather-info">
           <div class="weather-img-box w-[50%] mx-auto mt-24">
             <img src="./images/cloud.png" alt="cloudy" class="w-full">
@@ -23,11 +23,21 @@
           <p class="text-center mt-7 font-Roboto text-2xl text-white">16<span>°C</span></p>
           <p class="text-center mt-1 font-Roboto text-white text-xl">Broken Clouds</p>
         </div>
-        <div class="weather-details">
-          <div class="humidity-detail">
-            
+        <div class="weather-details flex mt-[8vh]">
+          <div class="humidity-detail flex ml-[3vw]">
+            <i class="fa-solid fa-water text-5xl" style="color: #ffffff;"></i>
+            <div class="humidity-writeup ml-6">
+              <p class="text-white text-xl font-JetBrainsMono">0%</p>
+              <P class="text-white font-JetBrainsMono">Humidity</P>
+            </div>
           </div>
-          <div class="wind-detail"></div>
+          <div class="wind-detail flex ml-[13vw]">
+            <i class="fa-solid fa-wind text-5xl" style="color: #ffffff;"></i>
+            <div class="wind-writeup ml-6">
+              <p class="text-white text-xl font-JetBrainsMono">0Km/H</p>
+              <p class="text-white font-JetBrainsMono">Wind Speed</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

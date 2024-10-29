@@ -624,44 +624,40 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.ml-10{
-  margin-left: 2.5rem;
-}
-
 .ml-5{
   margin-left: 1.25rem;
 }
 
-.mr-5{
-  margin-right: 1.25rem;
+.ml-6{
+  margin-left: 1.5rem;
+}
+
+.ml-\[13vw\]{
+  margin-left: 13vw;
+}
+
+.ml-\[3vw\]{
+  margin-left: 3vw;
 }
 
 .mr-7{
   margin-right: 1.75rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
+.mt-1{
+  margin-top: 0.25rem;
 }
 
 .mt-24{
   margin-top: 6rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .mt-7{
   margin-top: 1.75rem;
 }
 
-.mt-1{
-  margin-top: 0.25rem;
+.mt-\[8vh\]{
+  margin-top: 8vh;
 }
 
 .flex{
@@ -684,28 +680,20 @@ video {
   width: 40%;
 }
 
-.w-\[90\%\]{
-  width: 90%;
-}
-
-.w-\[80\%\]{
-  width: 80%;
+.w-\[50\%\]{
+  width: 50%;
 }
 
 .w-\[70\%\]{
   width: 70%;
 }
 
-.w-\[50\%\]{
-  width: 50%;
+.w-\[90\%\]{
+  width: 90%;
 }
 
 .w-full{
   width: 100%;
-}
-
-.w-\[60\%\]{
-  width: 60%;
 }
 
 .items-center{
@@ -720,10 +708,6 @@ video {
   border-radius: 1rem;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
-}
-
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -736,29 +720,9 @@ video {
   border-style: solid;
 }
 
-.border-red-700{
-  --tw-border-opacity: 1;
-  border-color: rgb(185 28 28 / var(--tw-border-opacity));
-}
-
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-red-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
-.bg-blue-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-green-700{
@@ -775,8 +739,16 @@ video {
   background-color: transparent;
 }
 
+.bg-hero-pattern{
+  background-image: url('/images/weather bg-alt.png');
+}
+
 .text-center{
   text-align: center;
+}
+
+.font-JetBrainsMono{
+  font-family: JetBrains Mono, monospace;
 }
 
 .font-Roboto{
@@ -788,19 +760,9 @@ video {
   line-height: 2rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-xl{
