@@ -9,7 +9,7 @@
   "author": "Marius Odediran",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^3.4.17"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,6 @@
     "url": "https://github.com/Marius-Diran/Weather-App/issues"
   },
   "homepage": "https://github.com/Marius-Diran/Weather-App#readme",
+  "keywords": [],
   "description": ""
 }
