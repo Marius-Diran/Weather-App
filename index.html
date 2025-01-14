@@ -6,36 +6,36 @@
   <title>Weather Site by Marius Odediran</title>
   <link rel="stylesheet" href="./output.css">
 </head>
-<body class="min-h-[100vh] flex justify-center items-center bg-hero-pattern font-Roboto">
+<body class="min-h-[100vh] flex justify-center items-center bg-hero-pattern font-Roboto bg-center bg-no-repeat bg-cover">
   <div class="container">
-    <div class="h-[90vh] w-[40%] bg-purple-600 mx-auto my-10 rounded-2xl main-body">
+    <div class="h-[90vh] w-[40%] bg-white/15 backdrop-blur-sm mx-auto my-10 rounded-2xl main-body">
       <div class="relative bg-transparent border border-solid border-white h-[10vh] w-[90%] flex items-center mx-auto top-8 rounded-lg search-box">
         <i class="fa-solid fa-location-dot text-2xl ml-5" style="color: #ffffff;"></i>
-        <input type="text" placeholder="Enter Your Location...." class="text-2xl bg-transparent placeholder-white w-[70%] mx-auto outline-none text-white placeholder:capitalize">
-        <button class="fa-solid fa-magnifying-glass text-2xl mr-7" style="color: #ffffff;"></button>
+        <input type="text" placeholder="Enter Your Location...." class="text-2xl bg-transparent placeholder-white w-[70%] mx-auto outline-none text-white placeholder:capitalize search-input">
+        <button class="fa-solid fa-magnifying-glass text-2xl mr-7 search-btn" style="color: #ffffff;"></button>
       </div>
 
       <div class="weather-box">
         <div class="weather-info">
           <div class="weather-img-box w-[50%] mx-auto mt-24">
-            <img src="./images/cloud.png" alt="cloudy" class="w-full">
+            <img src="./images/cloud.png" alt="cloudy" class="w-full weather-img">
           </div>
-          <p class="text-center mt-7 font-Roboto text-2xl text-white">16<span>°C</span></p>
-          <p class="text-center mt-1 font-Roboto text-white text-xl">Broken Clouds</p>
+          <p class="text-center mt-7 font-Roboto text-2xl text-white temp">0<span>°C</span></p>
+          <p class="text-center mt-1 font-Roboto text-white text-xl description">Broken Clouds</p>
         </div>
         <div class="weather-details flex mt-[8vh]">
           <div class="humidity-detail flex ml-[3vw]">
             <i class="fa-solid fa-water text-5xl" style="color: #ffffff;"></i>
             <div class="humidity-writeup ml-6">
               <p class="text-white text-xl font-JetBrainsMono">0%</p>
-              <P class="text-white font-JetBrainsMono">Humidity</P>
+              <P class="text-white font-JetBrainsMono humidity">Humidity</P>
             </div>
           </div>
           <div class="wind-detail flex ml-[13vw]">
             <i class="fa-solid fa-wind text-5xl" style="color: #ffffff;"></i>
             <div class="wind-writeup ml-6">
               <p class="text-white text-xl font-JetBrainsMono">0Km/H</p>
-              <p class="text-white font-JetBrainsMono">Wind Speed</p>
+              <p class="text-white font-JetBrainsMono wind-speed">Wind Speed</p>
             </div>
           </div>
         </div>
@@ -44,5 +44,6 @@
   </div>
 
   <script src="https://kit.fontawesome.com/ad2f1382aa.js" crossorigin="anonymous"></script>
+  <script src="weather.js"></script>
 </body>
 </html>
