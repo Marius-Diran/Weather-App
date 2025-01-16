@@ -15,7 +15,7 @@
         <button class="fa-solid fa-magnifying-glass text-2xl mr-7 search-btn" style="color: #ffffff;"></button>
       </div>
 
-      <div class="weather-box">
+      <div class="weather-box hidden">
         <div class="weather-info">
           <div class="weather-img-box w-[50%] mx-auto mt-24">
             <img src="./images/cloud.png" alt="cloudy" class="w-full weather-img">
@@ -27,18 +27,24 @@
           <div class="humidity-detail flex ml-[3vw]">
             <i class="fa-solid fa-water text-5xl" style="color: #ffffff;"></i>
             <div class="humidity-writeup ml-6">
-              <p class="text-white text-xl font-JetBrainsMono">0%</p>
-              <P class="text-white font-JetBrainsMono humidity">Humidity</P>
+              <p class="text-white text-xl font-JetBrainsMono humidity">0%</p>
+              <P class="text-white font-JetBrainsMono">Humidity</P>
             </div>
           </div>
-          <div class="wind-detail flex ml-[13vw]">
+          <div class="wind-detail flex ml-[12vw]">
             <i class="fa-solid fa-wind text-5xl" style="color: #ffffff;"></i>
             <div class="wind-writeup ml-6">
-              <p class="text-white text-xl font-JetBrainsMono">0Km/H</p>
-              <p class="text-white font-JetBrainsMono wind-speed">Wind Speed</p>
+              <p class="text-white text-xl font-JetBrainsMono wind-speed">0Km/H</p>
+              <p class="text-white font-JetBrainsMono">Wind Speed</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="error-box">
+        <div class="w-[65%] mx-auto mt-24"><img src="images/404.png" alt="Weather not found" class="w-full"></div>
+        <p class="text-center text-white text-2xl mt-24">Location Not Found</p>
+
       </div>
     </div>
   </div>
