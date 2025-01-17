@@ -1,9 +1,9 @@
-const mainBody = document.querySelector('main-body');
+const mainBody = document.querySelector('.main-body');
 const searchBtn = document.querySelector('.search-btn');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const searchInput = document.querySelector('.search-input');
-const error404 = document.querySelector('error-box')
+const error404 = document.querySelector('.error-box')
 
 searchBtn.addEventListener('click', () => {
   performSearch();
@@ -19,18 +19,21 @@ function performSearch() {
   const APIkey = 'a85989d2ccc1b494920a4a9758266b73';
   const city = searchInput.value;
 
-  if (city == '')
+  if (city.trim() === ''){
+    error404.classList.remove('hidden');
+    weatherBox.classList.add('hidden');
     return;
+  }
 
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`).then(response => response.json()).then(json => {
-    if (json.cod == '404') {
-      error404.style.display = 'visible';
-      weatherBox.style.display = 'hidden';
+    if (json.cod === '404') {
+      error404.classList.remove('active');
+      weatherBox.classList.add('active');
       return;
     }
 
-      error404.style.display = 'hidden';
-      weatherBox.style.display = 'visible';
+      error404.classList.add('active');
+      weatherBox.classList.remove('active');
 
     const image = document.querySelector('.weather-img');
     const temperature = document.querySelector('.temp');

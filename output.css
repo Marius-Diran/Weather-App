@@ -606,8 +606,8 @@ video {
   }
 }
 
-.visible{
-  visibility: visible;
+.invisible{
+  visibility: hidden;
 }
 
 .relative{
@@ -662,10 +662,6 @@ video {
 
 .mt-\[8vh\]{
   margin-top: 8vh;
-}
-
-.block{
-  display: block;
 }
 
 .flex{
@@ -818,6 +814,13 @@ video {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid gold;
+}
+
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -825,10 +828,19 @@ video {
   width: 98%;
 }
 
+/* .weather-box.active,
+.error-box.active {
+  @apply visible;
+} */
+
 .placeholder\:capitalize::-moz-placeholder{
   text-transform: capitalize;
 }
 
 .placeholder\:capitalize::placeholder{
   text-transform: capitalize;
+}
+
+.active\:visible:active{
+  visibility: visible;
 }

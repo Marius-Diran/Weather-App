@@ -14,6 +14,18 @@
   }
 }
 
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid gold;
+}
+
 .container {
   @apply w-[98%] h-[100vh] mx-auto;
 }
+
+/* .weather-box.active,
+.error-box.active {
+  @apply visible;
+} */
