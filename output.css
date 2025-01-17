@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
@@ -680,10 +680,6 @@ video {
   height: 90vh;
 }
 
-.min-h-\[100vh\]{
-  min-height: 100vh;
-}
-
 .w-\[40\%\]{
   width: 40%;
 }
@@ -818,7 +814,18 @@ body {
   background-image: url('images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid gold;
+  height: 100vh;
+  /* Set the height of the background image */
+  overflow: hidden;
+  /* Prevent overflow */
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .container{
@@ -827,11 +834,6 @@ body {
   height: 100vh;
   width: 98%;
 }
-
-/* .weather-box.active,
-.error-box.active {
-  @apply visible;
-} */
 
 .placeholder\:capitalize::-moz-placeholder{
   text-transform: capitalize;
