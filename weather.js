@@ -17,39 +17,33 @@ searchInput.addEventListener('keypress', (event) => {
 
 function performSearch() {
   const APIkey = 'a85989d2ccc1b494920a4a9758266b73';
-  const city = searchInput.value;
+  const city = searchInput.value.trim();
 
-  if (city.trim() === '') {
+  if (city === '') {
     console.log('City input is empty');
-    error404.classList.remove('hidden');
+    error404.classList.remove('invisible');
     error404.classList.add('active');
-    weatherBox.classList.add('hidden');
+    weatherBox.classList.remove('insivible');
     weatherBox.classList.remove('active');
+    weatherBox.classList.add('hidden');
     return;
   }
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(json => {
-      console.log('API response:', json);
-      if (json.cod === '404') {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`).then(response => response.json()).then(json => {
+    
+      if (json.cod == '404') {
         console.log('City not found');
         error404.classList.remove('hidden');
         error404.classList.add('active');
-        weatherBox.classList.add('hidden');
         weatherBox.classList.remove('active');
+        weatherBox.classList.add('hidden');
         return;
       }
 
       error404.classList.add('hidden');
       error404.classList.remove('active');
-      weatherBox.classList.remove('hidden');
       weatherBox.classList.add('active');
+      weatherBox.classList.remove('hidden');
 
       const image = document.querySelector('.weather-img');
       const temperature = document.querySelector('.temp');
@@ -93,9 +87,8 @@ function performSearch() {
     })
     .catch(error => {
       console.error('There has been a problem with your fetch operation:', error);
-      error404.classList.remove('hidden');
+      error404.classList.remove('invisible');
       error404.classList.add('active');
-      weatherBox.classList.add('hidden');
-      weatherBox.classList.remove('active');
+      weatherBox.classList.add('invisible');
     });
 }

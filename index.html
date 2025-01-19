@@ -12,10 +12,10 @@
       <div class="relative bg-transparent border border-solid border-white h-[10vh] w-[90%] flex items-center mx-auto top-8 rounded-lg search-box">
         <i class="fa-solid fa-location-dot text-2xl ml-5" style="color: #ffffff;"></i>
         <input type="text" placeholder="Enter Your Location...." class="text-2xl bg-transparent placeholder-white w-[70%] mx-auto outline-none text-white placeholder:capitalize search-input">
-        <button class="fa-solid fa-magnifying-glass text-2xl mr-7 search-btn" style="color: #ffffff;"></button>
+        <button aria-hidden="false" class="fa-solid fa-magnifying-glass text-2xl mr-7 search-btn" style="color: #ffffff;"></button>
       </div>
 
-      <div class="weather-box invisible active:visible">
+      <div class="weather-box hidden active:block">
         <div class="weather-info">
           <div class="weather-img-box w-[50%] mx-auto mt-24">
             <img src="./images/cloud.png" alt="cloudy" class="w-full weather-img">
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div class="error-box invisible active:visible">
+      <div class="error-box hidden active:block">
         <div class="w-[65%] mx-auto mt-24"><img src="images/404.png" alt="Weather not found" class="w-full"></div>
         <p class="text-center text-white text-2xl mt-24">Location Not Found!!</p>
       </div>

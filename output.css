@@ -820,14 +820,6 @@ body {
   /* Prevent overflow */
 }
 
-.hidden {
-  display: none;
-}
-
-.active {
-  display: block;
-}
-
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -845,4 +837,8 @@ body {
 
 .active\:visible:active{
   visibility: visible;
+}
+
+.active\:block:active{
+  display: block;
 }

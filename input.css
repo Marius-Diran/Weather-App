@@ -22,13 +22,6 @@ body {
   overflow: hidden; /* Prevent overflow */
 }
 
-.hidden {
-  display: none;
-}
-
-.active {
-  display: block;
-}
 
 .container {
   @apply w-[98%] h-[100vh] mx-auto;
