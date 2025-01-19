@@ -13,7 +13,7 @@ searchInput.addEventListener('keypress', (event) => {
   if (event.key === 'Enter') {
     performSearch();
   }
-});
+})
 
 function performSearch() {
   const APIkey = 'a85989d2ccc1b494920a4a9758266b73';
@@ -33,6 +33,7 @@ function performSearch() {
     
       if (json.cod == '404') {
         console.log('City not found');
+        mainBody.style.height = '78vh';
         error404.classList.remove('hidden');
         error404.classList.add('active');
         weatherBox.classList.remove('active');
@@ -40,6 +41,7 @@ function performSearch() {
         return;
       }
 
+      mainBody.style.height = '90vh';
       error404.classList.add('hidden');
       error404.classList.remove('active');
       weatherBox.classList.add('active');

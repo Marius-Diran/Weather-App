@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      transitionProperty: {
+        height: 'height'
+      },
       backgroundImage: {
         'hero-pattern': "url('/images/background.jpg')"
       },
