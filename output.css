@@ -680,8 +680,8 @@ video {
   height: 10vh;
 }
 
-.h-\[90vh\]{
-  height: 90vh;
+.h-\[18vh\]{
+  height: 18vh;
 }
 
 .w-\[40\%\]{
@@ -822,14 +822,6 @@ video {
 
 .duration-1000{
   transition-duration: 1000ms;
-}
-
-.duration-\[0\.9s\]{
-  transition-duration: 0.9s;
-}
-
-.ease-linear{
-  transition-timing-function: linear;
 }
 
 .ease-in-out{
