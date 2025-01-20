@@ -862,6 +862,34 @@ body {
     margin-left: 0.5rem;
   }
 
+  .phones\:ml-5{
+    margin-left: 1.25rem;
+  }
+
+  .phones\:mr-0{
+    margin-right: 0px;
+  }
+
+  .phones\:mr-2{
+    margin-right: 0.5rem;
+  }
+
+  .phones\:mr-4{
+    margin-right: 1rem;
+  }
+
+  .phones\:mr-3{
+    margin-right: 0.75rem;
+  }
+
+  .phones\:ml-3{
+    margin-left: 0.75rem;
+  }
+
+  .phones\:ml-4{
+    margin-left: 1rem;
+  }
+
   .phones\:w-\[90\%\]{
     width: 90%;
   }
@@ -869,5 +897,39 @@ body {
   .phones\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .phones\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .phones\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .phones\:text-\[0\.9rem\]{
+    font-size: 0.9rem;
+  }
+
+  .phones\:text-\[1rem\]{
+    font-size: 1rem;
+  }
+
+  .phones\:text-\[6rem\]{
+    font-size: 6rem;
+  }
+
+  .phones\:text-\[1\.3rem\]{
+    font-size: 1.3rem;
+  }
+
+  .phones\:text-\[1\.1rem\]{
+    font-size: 1.1rem;
+  }
+
+  .phones\:text-\[1re5\]{
+    color: 1re5;
   }
 }
