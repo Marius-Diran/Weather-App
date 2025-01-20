@@ -856,3 +856,18 @@ body {
 .active\:block:active{
   display: block;
 }
+
+@media (min-width: 320px) and (max-width: 500px){
+  .phones\:ml-2{
+    margin-left: 0.5rem;
+  }
+
+  .phones\:w-\[90\%\]{
+    width: 90%;
+  }
+
+  .phones\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
