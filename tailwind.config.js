@@ -10,7 +10,9 @@ module.exports = {
         'hero-pattern': "url('/images/background.jpg')"
       },
       screens: {
-        'phones': {'min': '320px', 'max': '500px'}
+        'phones': {'min': '320px', 'max': '500px'},
+        'md': {'min': '375px', 'max': '550px'},
+        'lg': {'min': '425px', 'max': '600px'},
       }
     },
     fontFamily: {

@@ -576,21 +576,21 @@ video {
   }
 }
 
+@media (min-width: 375px){
+  .container{
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 425px){
+  .container{
+    max-width: 425px;
+  }
+}
+
 @media (min-width: 640px){
   .container{
     max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
   }
 }
 
@@ -857,79 +857,109 @@ body {
   display: block;
 }
 
-@media (min-width: 320px) and (max-width: 500px){
-  .phones\:ml-2{
-    margin-left: 0.5rem;
+@media (min-width: 375px) and (max-width: 550px){
+  .md\:mr-5{
+    margin-right: 1.25rem;
   }
 
-  .phones\:ml-5{
-    margin-left: 1.25rem;
-  }
-
-  .phones\:mr-0{
+  .md\:mr-0{
     margin-right: 0px;
   }
 
-  .phones\:mr-2{
+  .md\:mr-8{
+    margin-right: 2rem;
+  }
+
+  .md\:mr-10{
+    margin-right: 2.5rem;
+  }
+
+  .md\:ml-2{
+    margin-left: 0.5rem;
+  }
+
+  .md\:mr-2{
     margin-right: 0.5rem;
   }
 
-  .phones\:mr-4{
-    margin-right: 1rem;
+  .md\:mr-3{
+    margin-right: 0.75rem;
   }
 
-  .phones\:mr-3{
+  .md\:ml-0{
+    margin-left: 0px;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 600px){
+  .lg\:ml-0{
+    margin-left: 0px;
+  }
+
+  .lg\:mr-3{
     margin-right: 0.75rem;
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px){
+  .phones\:ml-2{
+    margin-left: 0.5rem;
   }
 
   .phones\:ml-3{
     margin-left: 0.75rem;
   }
 
-  .phones\:ml-4{
-    margin-left: 1rem;
+  .phones\:mr-3{
+    margin-right: 0.75rem;
+  }
+
+  .phones\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .phones\:ml-0{
+    margin-left: 0px;
+  }
+
+  .phones\:block{
+    display: block;
   }
 
   .phones\:w-\[90\%\]{
     width: 90%;
   }
 
-  .phones\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .phones\:items-center{
+    align-items: center;
   }
 
-  .phones\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .phones\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .phones\:text-\[0\.9rem\]{
-    font-size: 0.9rem;
-  }
-
-  .phones\:text-\[1rem\]{
-    font-size: 1rem;
-  }
-
-  .phones\:text-\[6rem\]{
-    font-size: 6rem;
-  }
-
-  .phones\:text-\[1\.3rem\]{
-    font-size: 1.3rem;
+  .phones\:justify-center{
+    justify-content: center;
   }
 
   .phones\:text-\[1\.1rem\]{
     font-size: 1.1rem;
   }
 
-  .phones\:text-\[1re5\]{
-    color: 1re5;
+  .phones\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
